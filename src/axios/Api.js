@@ -1,5 +1,5 @@
 import axios from "axios";
-axios.defaults.baseURL = 'https://backend-delta-silk.vercel.app/';
+axios.defaults.baseURL = 'https://backend-delta-silk.vercel.app/api';
 axios.interceptors.request.use(
     config => {
         const token = localStorage.getItem("CC_Token")
